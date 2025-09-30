@@ -1,0 +1,23 @@
+npx create-vite . 
+
+npm i react-router : route routes link browserRouter
+browserRouter
+    routes 
+        route
+
+ npm i react-router sonner axios lucide-react
+sonner : hien thong bao  popup
+axios :  gui va nhan giu lieu qua api 
+lucide-react : icon cua reate
+
+
+https://tailwindcss.com/docs/installation/using-vite
+https://ui.shadcn.com/docs/installation/vite
+todo use : 
+npx shadcn@latest add button input card badge pagination command popover
+https://ui.shadcn.com/docs/components
+
+cors : cross-origin resource sharing : khac locallhost back end chua cho phep locallhost cua fontend chi cap 
+
+
+npm install i18next react-i18next : dich ngon ngu 

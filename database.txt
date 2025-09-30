@@ -1,0 +1,60 @@
+type: String | Number | Boolean | Date | Buffer | ObjectId | Array | Mixed | Map | Decimal128
+
+required: true | false Bắt buộc phải có
+unique: true | false 
+sparse: true | false Chỉ áp dụng unique cho các bản ghi 
+index: true | false ạo chỉ mục để tăng tốc truy vấn
+select: true | false Có được chọn khi .find() hay không
+
+default: <giá trị mặc định>
+enum: [giá trị1, giá trị2, ...]
+min: <giá trị nhỏ nhất>
+max: <giá trị lớn nhất>
+match: <biểu thức chính quy>
+validate: <hàm kiểm tra>
+
+trim: true
+lowercase: true
+uppercase: true
+
+Dùng để liên kết với document khác (quan hệ giữa bảng)
+ref: 'TênModel'
+type: mongoose.Schema.Types.ObjectId
+
+get: <hàm xử lý khi lấy>
+set: <hàm xử lý khi gán>
+alias: <tên thay thế> 
+immutable: true  Không thể thay đổi sau khi tạo
+transform: <hàm xử lý khi xuất JSON>
+
+const productSchema = new mongoose.Schema({
+  name: {
+    type: String,
+    required: true,
+    trim: true,
+    minlength: 3,
+    maxlength: 100
+  },
+  price: {
+    type: Number,
+    min: 0,
+    default: 0,
+    validate: v => v >= 0
+  },
+  sku: {
+    type: String,
+    unique: true,
+    sparse: true
+  },
+  category: {
+    type: mongoose.Schema.Types.ObjectId,
+    ref: 'Category'
+  },
+  createdAt: {
+    type: Date,
+    default: Date.now,
+    immutable: true
+  }
+});
+
+export default mongoose.model("Product", productSchema);

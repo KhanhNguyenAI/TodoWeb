@@ -1,0 +1,55 @@
+{
+  "common": {
+    "welcome": "Chào mừng đến với Todo App",
+    "add_task": "Thêm công việc",
+    "edit_task": "Sửa công việc",
+    "delete": "Xóa",
+    "save": "Lưu",
+    "cancel": "Hủy",
+    "update": "Cập nhật",
+    "loading": "Đang tải...",
+    "error": "Có lỗi xảy ra",
+    "welcome_back": "Chào mừng trở lại",
+    "hello": "Xin chào",
+    "logout": "Đăng xuất"
+  },
+  "tasks": {
+    "task_name": "Tên công việc",
+    "due_date": "Ngày hết hạn",
+    "priority": "Độ ưu tiên",
+    "status": "Trạng thái",
+    "completed": "Đã hoàn thành",
+    "active": "Đang thực hiện",
+    "add_task_placeholder": "Thêm công việc mới...",
+    "no_tasks": "Không có công việc nào",
+    "delete_confirm": "Bạn có chắc muốn xóa công việc này?"
+  },
+  "filters": {
+    "all": "Tất cả",
+    "completed": "Đã hoàn thành",
+    "pending": "Đang chờ",
+    "today": "Hôm nay",
+    "week": "Tuần này",
+    "month": "Tháng này",
+    "all_time": "Tất cả thời gian"
+  },
+  "stats": {
+    "total": "Tổng số",
+    "completed": "Đã hoàn thành",
+    "pending": "Đang chờ"
+  },
+  "pagination": {
+    "page": "Trang",
+    "of": "trên"
+  },
+  "errors": {
+    "fetch_error": "Lỗi xảy ra khi truy xuất tasks",
+    "add_error": "Lỗi khi thêm task",
+    "update_error": "Lỗi khi cập nhật task",
+    "delete_error": "Lỗi khi xóa task"
+  },
+  "motivational": {
+    "title_quote": "Mỗi ngày một bước tiến vươn tới đỉnh cao",
+    "description_quote": "Mỗi ngày bước tiến, vươn tới đỉnh cao"
+  }
+}

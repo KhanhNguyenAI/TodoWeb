@@ -1,0 +1,55 @@
+{
+  "common": {
+    "welcome": "Todoアプリへようこそ",
+    "add_task": "タスクを追加",
+    "edit_task": "タスクを編集",
+    "delete": "削除",
+    "save": "保存",
+    "cancel": "キャンセル",
+    "update": "更新",
+    "loading": "読み込み中...",
+    "error": "エラーが発生しました",
+    "welcome_back": "おかえりなさい",
+    "hello": "こんにちは",
+    "logout": "ログアウト"
+  },
+  "tasks": {
+    "task_name": "タスク名",
+    "due_date": "期限",
+    "priority": "優先度",
+    "status": "ステータス",
+    "completed": "完了",
+    "active": "実行中",
+    "add_task_placeholder": "新しいタスクを追加...",
+    "no_tasks": "タスクがありません",
+    "delete_confirm": "このタスクを削除してもよろしいですか？"
+  },
+  "filters": {
+    "all": "すべて",
+    "completed": "完了",
+    "pending": "保留中",
+    "today": "今日",
+    "week": "今週",
+    "month": "今月",
+    "all_time": "すべて"
+  },
+  "stats": {
+    "total": "合計",
+    "completed": "完了",
+    "pending": "保留中"
+  },
+  "pagination": {
+    "page": "ページ",
+    "of": "/"
+  },
+  "errors": {
+    "fetch_error": "タスクの取得中にエラーが発生しました",
+    "add_error": "タスクの追加中にエラーが発生しました",
+    "update_error": "タスクの更新中にエラーが発生しました",
+    "delete_error": "タスクの削除中にエラーが発生しました"
+  },
+  "motivational": {
+    "title_quote": "日々一歩ずつ、頂点を目指して",
+    "description_quote": "日々前進、頂点を目指して"
+  }
+}

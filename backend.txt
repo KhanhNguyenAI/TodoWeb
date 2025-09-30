@@ -1,0 +1,58 @@
+npm init -y : tai file package.json 
+ "type": "module", 
+
+npm install express : chay api 
+
+npm install nodemon -D  : road server if code changes
+"dev": "nodemon run dev"
+
+Create      Post
+Read        GET
+Update      Put/Patch
+Delete      Delete
+Tổng hợp mã trạng thái thường gặp
+| Mã | Ý nghĩa | Thường gặp với | 
+| 200 | OK – Thành công | GET, PUT, DELETE | 
+| 201 | Created – Tạo mới thành công | POST | 
+| 204 | No Content – Không có nội dung | PUT, DELETE | 
+| 400 | Bad Request – Lỗi cú pháp | POST, PUT | 
+| 401 | Unauthorized – Chưa xác thực | Mọi phương thức | 
+| 403 | Forbidden – Bị từ chối | Mọi phương thức | 
+| 404 | Not Found – Không tìm thấy | GET, PUT, DELETE | 
+| 409 | Conflict – Xung đột dữ liệu | POST, PUT | 
+| 500 | Internal Server Error | Mọi phương thức | 
+
+
+
+////Database
+
+
+connection string 
+mongodb+srv://97nguyenvantuankhanh_db_user:lymv1wfhkxUJHjud@cluster0.6npm2om.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0
+
+npm install mongoose // connect db
+
+npm install dotenv // truy cap bien trong moi truong
+
+npm install cors
+cors (Cross-Origin Resource Sharing) cho phép frontend (React) gọi API từ backend (Express).
+
+import bcrypt from "bcryptjs"; hash password
+
+
+npm install jsonwebtoken : JWT
+
+///JWT gom 3 phan header.payload.signature 
+HEADER : thông tin về token và thuật toán mã hóa 
+{
+  "alg": "HS256",
+  "typ": "JWT"
+}
+PAYLOAD : thông tin về user và metadata
+{
+  "sub": "1234567890",
+  "name": "John Doe",
+  "iat": 1516239022,
+  "exp": 1516242622
+}
+Signature (Chữ ký) Được tạo bằng cách mã hóa header + payload + secret key
