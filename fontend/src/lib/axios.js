@@ -1,7 +1,12 @@
 // lib/axios.js
 import axios from "axios";
+
+//deloy
+const baseURL =
+  import.meta.env.MODE === "development" ? "http://localhost:3000/api" : "/api";
+
 const api = axios.create({
-  baseURL: "http://localhost:3000/api",
+  baseURL,
 });
 
 // Request interceptor để thêm token
