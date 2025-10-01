@@ -27,8 +27,7 @@ Tổng hợp mã trạng thái thường gặp
 ////Database
 
 
-connection string 
-mongodb+srv://97nguyenvantuankhanh_db_user:lymv1wfhkxUJHjud@cluster0.6npm2om.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0
+
 
 npm install mongoose // connect db
 
